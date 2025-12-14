@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón Dulce de Mamá</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>El Rincón Dulce de Prado</h1>
+            <p>Repostería casera hecha con amor y dedicación</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container:">
+            <h2>Sobre Mí</h2>
+            <p class="about-text">
+                Bienvenido a mi pequeño mundo de azúcar. Aquí recopilo las tartas, galletas y dulces que he creado
+                a lo largo de los años para celebrar los momentos especiales de mi gente. No soy profesional,
+                pero pongo el corazón en cada gramo de harina.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container" id="galeria">
+        <h2>Galería de Dulces</h2>
+
+        <div class="gallery-nav">
+            <button class="tab-btn active" data-category="TARTAS">TARTAS</button>
+            <button class="tab-btn" data-category="GALLETAS">GALLETAS</button>
+            <button class="tab-btn" data-category="CUPCAKES">CUPCAKES</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Items injected by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="legal-text">
+            ⚠️ Esta web es un recetario personal y una galería de fotos de mi afición por la repostería.
+            No se realizan ventas directas ni actividad comercial a través de este sitio.
+        </p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">&copy; <span id="year"></span> El Rincón Dulce de Prado</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="Vista Previa" class="lightbox-img" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
